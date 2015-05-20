@@ -1,0 +1,41 @@
+/* ---- header ---- */
+header {
+    background: #9300DE;
+}
+.conteudo {
+    margin: 0 auto;
+    width: 80%;
+}
+
+#topo nav {
+    display: inline-block;
+}
+
+#topo nav img {
+    margin: 10px;
+}
+
+#topo form {
+    display: inline-block;
+}
+
+#topo form label {
+    display: inline-block;
+}
+
+/* ---- Principal ---- */
+
+section {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    background: url(../img/pretoBranco.jpg) #000 no-repeat center center;
+    background-size: cover;
+}
