@@ -6,7 +6,7 @@
 }
 
 header {
-  background: #9300de;
+  background: #5A0287;
   position: relative;
   border-bottom: #ffffff;
   border-bottom: 0.1em solid #FFF;
@@ -39,7 +39,7 @@ header {
 }
 
 .cadastreSe{
-  border: 0.2em solid #9300DE;
+  border: 0.2em solid #9300de;
   border-radius: 1.5em;
   height: 13.5em;
   margin: 2em auto;
@@ -61,7 +61,7 @@ header {
 
 /* ---- FOOTER ----*/
 footer {
-  background: #9300de;
+  background: #5A0287;
   border-top: #ffffff;
   bottom: 0;
   border-top: 0.1em solid #FFF;
@@ -90,6 +90,10 @@ footer .container {
 /*---- EFEITOS ---- */
 .transparencia {
   background: rgba(147,0,222,0.6);
+}
+
+.clarear {
+  background: #9300de;
 }
 /*---- FIM EFEITOS ---- */
 
