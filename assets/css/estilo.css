@@ -6,22 +6,22 @@
 }
 
 header {
-    background: rgba(147,0,222,0.6);
-    position: relative;
-    border-bottom: #ffffff;
-    border-bottom: 0.1em solid #FFF;
+  background: #9300de;
+  position: relative;
+  border-bottom: #ffffff;
+  border-bottom: 0.1em solid #FFF;
 }
 
 .logo {
   position: relative;
-  margin: 10px;
+  margin: 0.5em;
 }
 
 .form-login {
   position: absolute;
   top: 0;
   right: 0;
-  margin: 25px 10px;
+  margin: 1em 0.5em;
 }
 /* ---- FIM HEADER ---- */
 
@@ -32,10 +32,7 @@ header {
   left: 50%;
   min-width: 100%;
   min-height: 100%;
-  /*width: auto;
-  height: auto;*/
   z-index: -100;
-  /*-webkit-transform: translateX(-50%) translateY(-50%);*/
   transform: translateX(-50%) translateY(-50%);
   background: url(../img/pretoBranco.jpg) #000 no-repeat center center;
   background-size: cover;
@@ -43,7 +40,7 @@ header {
 
 .cadastreSe{
   border: 0.2em solid #9300DE;
-  border-radius: 10px;
+  border-radius: 1.5em;
   height: 13.5em;
   margin: 2em auto;
   margin-top: 5%;
@@ -64,22 +61,22 @@ header {
 
 /* ---- FOOTER ----*/
 footer {
-  background: rgba(147,0,222,0.6);
+  background: #9300de;
   border-top: #ffffff;
   bottom: 0;
   border-top: 0.1em solid #FFF;
   clear: both;
   height: 4em;
-  width: 100%;
   position: absolute;
-}
-
-.social li {
-  display: inline;
+  width: 100%;
 }
 
 footer .container {
   position: relative;
+}
+
+.social li {
+  display: inline;
 }
 
 .social {
@@ -89,9 +86,15 @@ footer .container {
 }
 /* ---- FIM FOOTER ----*/
 
+
+/*---- EFEITOS ---- */
+.transparencia {
+  background: rgba(147,0,222,0.6);
+}
+/*---- FIM EFEITOS ---- */
+
 /* ---- INPUTS ---- */
 form input {
-  /*background-color: #f2f2f2;*/
   border: 1px solid #f2f2f2;
   padding: 8px;
   border-radius: 2px;
@@ -111,12 +114,12 @@ form input:focus {
 /*---- BOTOES ----*/
 .btn {
   background-color: #ccc;
-  color: #444;
-  padding: 5px 20px;
+  color: #fff;
+  padding: .4em 1.0em;
   text-decoration: none;
-  font-size: 14px;
+  font-size: .85em;
   border: none;
-  border-radius: 2px;
+  border-radius: .1em;
 }
 
 .btn-cadastreSe {
@@ -132,26 +135,26 @@ form input:focus {
 }
 
 .btn-cadastreSe:hover {
-  background-color: #494949;
+  background-color: #af12ff;
 }
 
 .btn-principal {
-  color: #fff;
   background-color: #0095b4;
 }
 
+.btn-principal:hover {
+  background-color: #00809c;
+}
+
 .btn-sucesso {
-  color: #fff;
   background-color: #009835;
 }
 
 .btn-erro {
-  color: #fff;
   background-color: #CC0000;
 }
 
 .btn-alerta {
-  color: #fff;
   background-color: #F28E00;
 }
 /*---- FIM BOTOES ----*/
