@@ -57,6 +57,10 @@ header {
   text-shadow: 0.1em 0.1em #000;
   margin-top: 1em;
 }
+
+main {
+  background: #D7D0DB;
+}
 /* ---- FIM CORPO ---- */
 
 /* ---- FOOTER ----*/
@@ -85,6 +89,12 @@ footer .container {
   right: 0;
 }
 /* ---- FIM FOOTER ----*/
+
+/*---- H's ----*/
+h1 {
+  padding: .5em .5em
+}
+/*---- FIM H's ----*/
 
 
 /*---- EFEITOS ---- */
