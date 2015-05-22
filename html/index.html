@@ -2,31 +2,70 @@
 <html lang="pt-br">
 <head>
   <meta charset="UTF-8">
+  <link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" type="text/css" href="../assets/css/reset.css">
   <link rel="stylesheet" type="text/css" href="../assets/css/estilo.css">
   <title></title>
 </head>
 <body>
+  <!-- Topo -->
   <header>
-    <div id="topo" class="conteudo">
-      <nav>
-        <img src="http://placehold.it/150x60" alt="Musyk"/>
-      </nav>
-      <form action="">
-        <label>
-            <input type="text" placeholder="Usuário"/>
-            <!--<a href="#">Cadastre-se</a>-->
-        </label>
-        <label for="">
-          <input type="password" placeholder="Senha"/>
-          <!--<a href="#">Esqueceu a senha?</a>-->
-        </label>
-        <input type="submit" value="Entrar">
-      </form>
+    <div class="container">
+      <h1>
+        <img class="logo" src="http://placehold.it/250x60" alt="Musyk"/>
+        </h1>
+      <div class="form-login">
+        <form action="">
+          <label>
+              <input type="text" placeholder="Usuário"/>
+              <!--<a href="#">Cadastre-se</a>-->
+          </label>
+          <label for="">
+            <input type="password" placeholder="Senha"/>
+            <!--<a href="#">Esqueceu a senha?</a>-->
+          </label>
+          <input class="btn btn-principal text" type="submit" value="Entrar">
+        </form>
+      </div>
     </div>
   </header>
-  <section>
+
+  <!-- Principal -->
+  <section class="">
+    <div class="fundo"></div>
+    <div class="cadastreSe">
+      <div class="cadastreSe-p text">
+        <p>BEM VINDO ao Musyk</p>
+        <p>A rede social para qualquer músico!</p>
+        <p>Forme bandas, controle suas apresentações, suas cifras e encontre novos amigos!</p>
+      </div>
+      <a class="btn btn-cadastreSe text" href="">Cadastre-se</a>
+    </div>
   </section>
-  <footer></footer>
+
+  <!-- Rodapeh -->
+  <footer>
+    <div class="container">
+      <nav>
+        <ul class="social">
+          <li>
+            <a href="http://facebook.com/">
+              <img src="../assets/img/social/facebook.png" alt="Facebook">
+            </a>
+          </li>
+          <li>
+            <a href="http://twitter.com/">
+              <img src="../assets/img/social/twitter.png" alt="Facebook">
+            </a>
+          </li>
+          <li>
+            <a href="http://plus.google.com/">
+              <img src="../assets/img/social/googleplus.png" alt="Facebook">
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </footer>
 </body>
 </html>
