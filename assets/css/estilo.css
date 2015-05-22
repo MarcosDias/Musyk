@@ -1,41 +1,157 @@
-/* ---- header ---- */
+/* ---- HEADER ---- */
+.container {
+  position: relative;
+  margin: 0 auto;
+  width: 80%;
+}
+
 header {
-    background: #9300DE;
-}
-.conteudo {
-    margin: 0 auto;
-    width: 80%;
-}
-
-#topo nav {
-    display: inline-block;
+    background: rgba(147,0,222,0.6);
+    position: relative;
+    border-bottom: #ffffff;
+    border-bottom: 0.1em solid #FFF;
 }
 
-#topo nav img {
-    margin: 10px;
+.logo {
+  position: relative;
+  margin: 10px;
 }
 
-#topo form {
-    display: inline-block;
+.form-login {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 25px 10px;
+}
+/* ---- FIM HEADER ---- */
+
+/* ---- CORPO ---- */
+.fundo {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  /*width: auto;
+  height: auto;*/
+  z-index: -100;
+  /*-webkit-transform: translateX(-50%) translateY(-50%);*/
+  transform: translateX(-50%) translateY(-50%);
+  background: url(../img/pretoBranco.jpg) #000 no-repeat center center;
+  background-size: cover;
 }
 
-#topo form label {
-    display: inline-block;
+.cadastreSe{
+  border: 0.2em solid #9300DE;
+  border-radius: 10px;
+  height: 13.5em;
+  margin: 2em auto;
+  margin-top: 5%;
+  position: relative;
+  width: 35em;
 }
 
-/* ---- Principal ---- */
-
-section {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    min-width: 100%;
-    min-height: 100%;
-    width: auto;
-    height: auto;
-    z-index: -100;
-    -webkit-transform: translateX(-50%) translateY(-50%);
-    transform: translateX(-50%) translateY(-50%);
-    background: url(../img/pretoBranco.jpg) #000 no-repeat center center;
-    background-size: cover;
+.cadastreSe-p {
+  color: #fff;
+  font-size: 1.25em;
+  font-weight: bold;
+  line-height: 1.5;
+  text-align: center;
+  text-shadow: 0.1em 0.1em #000;
+  margin-top: 1em;
 }
+/* ---- FIM CORPO ---- */
+
+/* ---- FOOTER ----*/
+footer {
+  background: rgba(147,0,222,0.6);
+  border-top: #ffffff;
+  bottom: 0;
+  border-top: 0.1em solid #FFF;
+  clear: both;
+  height: 4em;
+  width: 100%;
+  position: absolute;
+}
+
+.social li {
+  display: inline;
+}
+
+footer .container {
+  position: relative;
+}
+
+.social {
+  position: absolute;
+  top: 12px;
+  right: 0;
+}
+/* ---- FIM FOOTER ----*/
+
+/* ---- INPUTS ---- */
+form input {
+  /*background-color: #f2f2f2;*/
+  border: 1px solid #f2f2f2;
+  padding: 8px;
+  border-radius: 2px;
+}
+
+form input:focus {
+  background-color: #ccc;
+}
+/* ---- FIM INPUTS ---- */
+
+/* ---- TEXT ----*/
+.text {
+  font-family: 	"Oswald", Helvetica, Arial, sans-serif;
+}
+/* ---- FIM TEXT ----*/
+
+/*---- BOTOES ----*/
+.btn {
+  background-color: #ccc;
+  color: #444;
+  padding: 5px 20px;
+  text-decoration: none;
+  font-size: 14px;
+  border: none;
+  border-radius: 2px;
+}
+
+.btn-cadastreSe {
+  color: #fff;
+  background-color: #9300DE;
+  bottom: 1em;
+  font-size: 1.2em;
+  left: calc(50% - 5em);
+  padding: 0.75em 2em;
+  position: absolute;
+  text-align: center;
+  width: 5em;
+}
+
+.btn-cadastreSe:hover {
+  background-color: #494949;
+}
+
+.btn-principal {
+  color: #fff;
+  background-color: #0095b4;
+}
+
+.btn-sucesso {
+  color: #fff;
+  background-color: #009835;
+}
+
+.btn-erro {
+  color: #fff;
+  background-color: #CC0000;
+}
+
+.btn-alerta {
+  color: #fff;
+  background-color: #F28E00;
+}
+/*---- FIM BOTOES ----*/
