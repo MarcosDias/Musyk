@@ -20,8 +20,7 @@ header {
 .form-login {
   position: absolute;
   top: 0;
-  right: 0;
-  margin: 1em 0.5em;
+  margin: 2em 0.5em;
 }
 /* ---- FIM HEADER ---- */
 
@@ -58,8 +57,37 @@ header {
   margin-top: 1em;
 }
 
-main {
-  background: #D7D0DB;
+.painel {
+  position: relative;
+  padding: 1em 0.5em;
+  width: 45%;
+}
+
+.form-cadastro {
+  position: relative;
+  width: 100%;
+  display: inline-block;
+}
+
+.input-cadastro {
+  margin-bottom: .5em;
+  width: 20em;
+}
+
+.checkbox-cadastro{
+  right: 0em;
+}
+
+.foto {
+  border: solid .5em #fff;
+  border-bottom: solid 1.2em #fff;
+  width: 20em;
+  height: 19em;
+}
+
+.foto img {
+  width: 100%;
+  height: 100%;
 }
 /* ---- FIM CORPO ---- */
 
@@ -90,14 +118,37 @@ footer .container {
 }
 /* ---- FIM FOOTER ----*/
 
-/*---- H's ----*/
-h1 {
-  padding: .5em .5em
+/* ---- H's ----*/
+h2 {
+  padding: .5em 0;
+  font-size: 2em;
 }
-/*---- FIM H's ----*/
-
+/* ---- FIM H's ----*/
 
 /*---- EFEITOS ---- */
+.full {
+  width: 100%;
+  margin: .5em auto;
+}
+
+.background {
+  background: #D7D0DB;
+  height: 30em;
+}
+
+.absolute {
+  position: absolute;
+  top: 0;
+}
+
+.left {
+  left: 0;
+}
+
+.right {
+  right: 0;
+}
+
 .transparencia {
   background: rgba(147,0,222,0.6);
 }
