@@ -60,7 +60,7 @@ header {
   text-shadow: 0.1em 0.1em #000;
 }
 
-.painel {
+.painel-metade {
   position: relative;
   padding: 1em 0.5em;
   width: 45%;
@@ -139,16 +139,16 @@ h2 {
   height: 30em;
 }
 
-.absolute {
+.absoluto {
   position: absolute;
   top: 0;
 }
 
-.left {
+.esquerda {
   left: 0;
 }
 
-.right {
+.direita {
   right: 0;
 }
 
