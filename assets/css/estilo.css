@@ -1,3 +1,6 @@
+@import url('http://fonts.googleapis.com/css?family=Oswald');
+@import url('http://fonts.googleapis.com/css?family=Dosis:400,500,600');
+
 /* ---- HEADER ---- */
 .container {
   position: relative;
@@ -25,7 +28,7 @@ header {
 /* ---- FIM HEADER ---- */
 
 /* ---- CORPO ---- */
-.fundo {
+.fundo-img {
   position: fixed;
   top: 50%;
   left: 50%;
@@ -40,7 +43,7 @@ header {
 .cadastreSe{
   border: 0.2em solid #9300de;
   border-radius: 1.5em;
-  height: 13.5em;
+  height: 15em;
   margin: 2em auto;
   margin-top: 5%;
   position: relative;
@@ -49,12 +52,12 @@ header {
 
 .cadastreSe-p {
   color: #fff;
-  font-size: 1.25em;
+  font-size: 1.5em;
   font-weight: bold;
   line-height: 1.5;
+  margin-top: 1em;
   text-align: center;
   text-shadow: 0.1em 0.1em #000;
-  margin-top: 1em;
 }
 
 .painel {
@@ -174,6 +177,11 @@ form input:focus {
 .text {
   font-family: 	"Oswald", Helvetica, Arial, sans-serif;
 }
+
+.body-text {
+  font-family: 	"Dosis", Helvetica, Arial, sans-serif;
+}
+
 /* ---- FIM TEXT ----*/
 
 /*---- BOTOES ----*/
