@@ -5,25 +5,19 @@
 .container {
   position: relative;
   margin: 0 auto;
+  padding: 1em 0;
   width: 80%;
 }
 
 header {
   background: #5A0287;
+  border-bottom: 0.1em solid #fff;
   position: relative;
-  border-bottom: #ffffff;
-  border-bottom: 0.1em solid #FFF;
 }
 
-.logo {
-  position: relative;
-  margin: 0.5em;
-}
-
-.form-login {
+#form-login {
   position: absolute;
-  top: 0;
-  margin: 2em 0.5em;
+  top: 30;
 }
 /* ---- FIM HEADER ---- */
 
@@ -62,8 +56,12 @@ header {
 
 .painel-metade {
   position: relative;
-  padding: 1em 0.5em;
   width: 45%;
+  /*height: 30em;*/
+}
+
+#painel-direita {
+  margin: 1em 0;
 }
 
 .form-cadastro {
@@ -89,25 +87,31 @@ header {
 }
 
 .foto img {
-  width: 100%;
   height: 100%;
+  width: 100%;
+}
+
+.time-line {
+  position: relative;
+  height: 35em;
+  width: 60%;
+}
+
+#foto-logon {
+  position: relative;
+  top: 1;
+  margin: 1em;
 }
 /* ---- FIM CORPO ---- */
 
 /* ---- FOOTER ----*/
 footer {
   background: #5A0287;
-  border-top: #ffffff;
-  bottom: 0;
   border-top: 0.1em solid #FFF;
   clear: both;
   height: 4em;
   position: absolute;
   width: 100%;
-}
-
-footer .container {
-  position: relative;
 }
 
 .social li {
@@ -123,8 +127,8 @@ footer .container {
 
 /* ---- H's ----*/
 h2 {
-  padding: .5em 0;
   font-size: 2em;
+  margin-bottom: .25em;
 }
 /* ---- FIM H's ----*/
 
@@ -136,6 +140,10 @@ h2 {
 
 .background {
   background: #D7D0DB;
+
+}
+
+.full-tela {
   height: 30em;
 }
 
@@ -144,12 +152,12 @@ h2 {
   top: 0;
 }
 
-.esquerda {
-  left: 0;
-}
-
 .direita {
   right: 0;
+}
+
+.baixo {
+  bottom: 0;
 }
 
 .transparencia {
