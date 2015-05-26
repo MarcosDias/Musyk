@@ -1,7 +1,6 @@
 @import url('http://fonts.googleapis.com/css?family=Oswald');
 @import url('http://fonts.googleapis.com/css?family=Dosis:400,500,600');
 
-/* ---- HEADER ---- */
 .container {
   position: relative;
   margin: 0 auto;
@@ -9,6 +8,7 @@
   width: 80%;
 }
 
+/* ---- HEADER ---- */
 header {
   background: #5A0287;
   border-bottom: 0.1em solid #fff;
@@ -18,6 +18,19 @@ header {
 #form-login {
   position: absolute;
   top: 30;
+}
+
+#nav-site ul li{
+  display: inline;
+  margin-right: 0.2em;
+}
+
+#form-logoff {
+  margin: 2em 0;
+}
+
+#form-logoff a {
+  color: #fff;
 }
 /* ---- FIM HEADER ---- */
 
@@ -57,7 +70,6 @@ header {
 .painel-metade {
   position: relative;
   width: 45%;
-  /*height: 30em;*/
 }
 
 #painel-direita {
@@ -70,20 +82,14 @@ header {
   display: inline-block;
 }
 
-.input-cadastro {
+#input-cadastro {
   margin-bottom: .5em;
-  width: 20em;
-}
-
-.checkbox-cadastro{
-  right: 0em;
+  width: 22em;
 }
 
 .foto {
   border: solid .5em #fff;
   border-bottom: solid 1.2em #fff;
-  width: 20em;
-  height: 19em;
 }
 
 .foto img {
@@ -91,16 +97,61 @@ header {
   width: 100%;
 }
 
+#destaque-cadastro {
+  width: 25em;
+  height: 24em;
+}
+
 .time-line {
-  position: relative;
+  background: #fff;
   height: 35em;
+  padding: .5em;
+  position: relative;
   width: 60%;
 }
 
-#foto-logon {
+.time-line #input-perfil input {
   position: relative;
-  top: 1;
-  margin: 1em;
+  background-color: #ccc;
+  width: 33em;
+}
+
+#input-perfil {
+  margin-bottom: .5em;
+  width: 26em;
+}
+
+#img-perfil-cadastro {
+  border-color: #D7D0DB;
+  height: 12em;
+  margin-bottom: 1em;
+  width: 12em;
+}
+
+#foto-capa {
+  height: 20em;
+  margin-top: 1em;
+  width: 20em;
+}
+
+#foto-perfil {
+  height: 8em;
+  border-color: #D7D0DB;
+  position: absolute;
+  width: 8em;
+  z-index: 9999;
+  top: 25%;
+  left: 25%;
+}
+
+#prox-eventos {
+  width: 21em;
+  position: absolute;
+  bottom: 1.5em;
+}
+
+#prox-eventos ul li {
+  margin: .3em 0;
 }
 /* ---- FIM CORPO ---- */
 
@@ -130,9 +181,18 @@ h2 {
   font-size: 2em;
   margin-bottom: .25em;
 }
+h3 {
+  font-size: 1.0em;
+  margin-bottom: .3em;
+}
 /* ---- FIM H's ----*/
 
 /*---- EFEITOS ---- */
+.colunas {
+  -moz-column-count: 3;
+  -webkit-column-count: 3;
+}
+
 .full {
   width: 100%;
   margin: .5em auto;
@@ -149,11 +209,14 @@ h2 {
 
 .absoluto {
   position: absolute;
-  top: 0;
 }
 
 .direita {
   right: 0;
+}
+
+.acima {
+  top: 0;
 }
 
 .baixo {
@@ -195,12 +258,13 @@ form input:focus {
 /*---- BOTOES ----*/
 .btn {
   background-color: #ccc;
-  color: #fff;
-  padding: .4em 1.0em;
-  text-decoration: none;
-  font-size: .85em;
   border: none;
   border-radius: .1em;
+  color: #fff;
+  font-size: .85em;
+  padding: .4em 1.0em;
+  text-decoration: none;
+  text-align: center;
 }
 
 .btn-cadastreSe {
@@ -211,7 +275,6 @@ form input:focus {
   left: calc(50% - 5em);
   padding: 0.75em 2em;
   position: absolute;
-  text-align: center;
   width: 5em;
 }
 
@@ -225,6 +288,11 @@ form input:focus {
 
 .btn-principal:hover {
   background-color: #00809c;
+}
+
+#btn-perfil-cadastro {
+  margin: 1.5em 15em;
+  width: 15em;
 }
 
 .btn-sucesso {
