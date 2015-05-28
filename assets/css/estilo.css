@@ -26,7 +26,7 @@ header {
 }
 
 #form-logoff {
-  margin: 5em 0;
+  margin: 2em 0;
 }
 
 #form-logoff a {
@@ -110,10 +110,21 @@ header {
   width: 60%;
 }
 
-.time-line #input-perfil input {
+.time-line .title {
+  text-align: center;
+}
+
+
+.time-line input[type=text],
+.time-line input[type=file],
+.time-line input[type=search] {
   position: relative;
   background-color: #ccc;
   width: 33em;
+}
+
+.time-line #search {
+  margin: .5em auto;
 }
 
 #input-perfil {
@@ -153,6 +164,49 @@ header {
 #prox-eventos ul li {
   margin: .3em 0;
 }
+
+.equipe {
+  position: relative;
+  background: #ccc;
+  margin-bottom: .5em;
+}
+
+.time-line .equipe img {
+  margin: .5em;
+  width: 5em;
+  height: 5em;
+}
+.time-line .equipe .simples-info-equipe {
+  left: 6em;
+  top: 10;
+}
+
+.time-line .equipe .simples-info-equipe p {
+  margin: 1em 0;
+}
+
+.anterior-proximo {
+  margin: 1.5em 0;
+  text-align: center;
+}
+
+.abrir-modal {
+  margin: .5em;
+}
+
+#abrir-modal h2 {
+  text-align: center;
+}
+
+#abrir-modal input[type=text],
+#abrir-modal input[type=file] {
+  background-color: #ccc;
+}
+
+#abrir-modal input[type=submit] {
+  margin-left: auto;
+  margin-right: auto;
+}
 /* ---- FIM CORPO ---- */
 
 /* ---- FOOTER ----*/
@@ -171,10 +225,60 @@ footer {
 
 .social {
   position: absolute;
-  top: 12px;
+  top: 1em;
   right: 0;
 }
 /* ---- FIM FOOTER ----*/
+
+/* ---- MODAL ----*/
+.modal {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0,0,0,0.5);
+  z-index: 99999;
+  opacity:0;
+  -webkit-transition: opacity 400ms ease-in;
+  -moz-transition: opacity 400ms ease-in;
+  transition: opacity 400ms ease-in;
+  pointer-events: none;
+  overflow: scroll;
+}
+
+.modal:target {
+  opacity:1;
+  pointer-events: auto;
+}
+
+.modal div {
+  border-radius: 1em;
+  background: #fff;
+  position: relative;
+  width: 30em;
+  margin: 5% auto;
+  padding: .8em;
+}
+
+.close {
+  background: #606061;
+  color: #FFFFFF;
+  line-height: 1.5em;
+  position: absolute;
+  right: -.5em;
+  text-align: center;
+  top: -.5em;
+  width: 1.5em;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 12px;
+}
+
+.close:hover {
+  background: #5A0287;
+}
+/* ---- FIM MODAL ----*/
 
 /* ---- H's ----*/
 h2 {
@@ -194,7 +298,7 @@ h3 {
 }
 
 .full {
-  width: 100%;
+  width: 90%;
   margin: .5em auto;
 }
 
