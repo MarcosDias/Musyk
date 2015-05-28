@@ -336,6 +336,12 @@ h3 {
 }
 /*---- FIM EFEITOS ---- */
 
+/* ---- A's ----*/
+a {
+  color: #5A0287;
+}
+/* ---- FIM A's ----*/
+
 /* ---- INPUTS ---- */
 form input {
   border: 1px solid #f2f2f2;
