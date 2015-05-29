@@ -139,20 +139,10 @@ header {
   width: 12em;
 }
 
-#foto-capa {
+#foto-perfil {
   height: 20em;
   margin-top: 1em;
   width: 20em;
-}
-
-#foto-perfil {
-  height: 8em;
-  border-color: #D7D0DB;
-  position: absolute;
-  width: 8em;
-  z-index: 9999;
-  top: 25%;
-  left: 25%;
 }
 
 #prox-eventos {
