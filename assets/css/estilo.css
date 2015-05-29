@@ -155,29 +155,37 @@ header {
   margin: .3em 0;
 }
 
-.equipe {
-  position: relative;
+.box-time-line {
   background: #ccc;
+  padding: .5em;
+  position: relative;
   margin-bottom: .5em;
 }
 
-.time-line .equipe img {
-  margin: .5em;
+.box-time-line img {
   width: 5em;
   height: 5em;
 }
-.time-line .equipe .simples-info-equipe {
+.box-time-line .simples-info-equipe {
   left: 6em;
   top: 10;
 }
 
-.time-line .equipe .simples-info-equipe p {
+.box-time-line .simples-info-equipe p {
   margin: 1em 0;
+}
+
+.galeria-time-line {
+  margin-top: .3em;
+}
+
+.galeria-time-line li{
+  display: inline-block;
 }
 
 .anterior-proximo {
   margin: 1.5em 0;
-  text-align: center;
+  left: 40%;
 }
 
 .abrir-modal {
