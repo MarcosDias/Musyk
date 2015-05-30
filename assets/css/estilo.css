@@ -20,6 +20,10 @@ header {
   top: 30;
 }
 
+#form-login label {
+  display: inline;
+}
+
 #nav-site ul li{
   display: inline;
   margin-right: 0.2em;
@@ -58,13 +62,17 @@ header {
 }
 
 .cadastreSe-p {
-  color: #fff;
   font-size: 1.5em;
   font-weight: bold;
   line-height: 1.5;
   margin-top: 1em;
   text-align: center;
   text-shadow: 0.1em 0.1em #000;
+}
+
+.cadastreSe-p p {
+  color: #fff;
+
 }
 
 .painel-metade {
@@ -104,7 +112,7 @@ header {
 
 .time-line {
   background: #fff;
-  height: 35em;
+  min-height: 35em;
   padding: .5em;
   position: relative;
   width: 60%;
@@ -162,7 +170,7 @@ header {
   margin-bottom: .5em;
 }
 
-.box-time-line img {
+.box-time-line .img-simple-info-equipe {
   width: 5em;
   height: 5em;
 }
@@ -173,6 +181,18 @@ header {
 
 .box-time-line .simples-info-equipe p {
   margin: 1em 0;
+}
+
+.box-time-line .simple-info-cifra p {
+  display: inline-block;
+}
+
+.voto-cifra {
+  margin: .5em;
+}
+
+.voto-cifra p {
+  color: red;
 }
 
 .galeria-time-line {
@@ -341,6 +361,9 @@ a {
 /* ---- FIM A's ----*/
 
 /* ---- INPUTS ---- */
+label {
+  display: block;
+}
 form input {
   border: 1px solid #f2f2f2;
   padding: 8px;
@@ -349,6 +372,11 @@ form input {
 
 form input:focus {
   background-color: #ccc;
+}
+
+input[type=radio] {
+  width: 10%;
+  margin: .5em 0;
 }
 /* ---- FIM INPUTS ---- */
 
