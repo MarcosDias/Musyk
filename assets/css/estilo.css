@@ -442,7 +442,8 @@ label {
   display: block;
 }
 
-form input {
+form input,
+form select {
   border: 1px solid #f2f2f2;
   padding: 8px 0;
   border-radius: 2px;

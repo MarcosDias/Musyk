@@ -13,23 +13,23 @@
         <nav id="nav-site">
           <ul>
             <li>
-              <a href="#">
+              <a href="principal.html">
                 <img class="logo" src="http://placehold.it/250x60" alt="Musyk"/>
               </a>
             </li>
             <li>
-              <a href="#">
+              <a href="usuario-perfil.html">
                 <img src="http://placehold.it/60x60" alt="Perfil">
               </a>
             </li>
             <li>
-              <a href="#">
-                <img src="http://placehold.it/60x60" alt="Perfil">
+              <a href="usuario-equipes.html">
+                <img src="http://placehold.it/60x60" alt="Equipe">
               </a>
             </li>
             <li>
-              <a href="#">
-                <img src="http://placehold.it/60x60" alt="Perfil">
+              <a href="usuario-cifras.html">
+                <img src="http://placehold.it/60x60" alt="Cifras">
               </a>
             </li>
           </ul>
@@ -141,20 +141,34 @@
 
             <form class="input-cadastro" action="#">
               <label>
-                <input class="full" type="text" placeholder="Nome da Cantor/Banda"/>
+                <input class="full" required type="text" placeholder="Nome da Cantor/Banda"/>
               </label>
               <label>
-                <input class="full" type="text" placeholder="Nome da Música"/>
+                <input class="full" required type="text" placeholder="Nome da Música"/>
               </label>
               <label>
-                <input class="full" type="text" placeholder="Tom"/>
+                <select class="full" required placeholder="Tom">
+                  <option selected value="">Selecione uma opção.</option>
+                  <option value="C" >C</option>
+                  <option value="C#">C#</option>
+                  <option value="D" >D</option>
+                  <option value="D#">D#</option>
+                  <option value="E" >E</option>
+                  <option value="F" >F</option>
+                  <option value="F#">F#</option>
+                  <option value="G" >G</option>
+                  <option value="G#">G#</option>
+                  <option value="A" >A</option>
+                  <option value="Bb">Bb</option>
+                  <option value="B" >B</option>
+                </select>
               </label>
               <label>
-                <input class="full" type="file" placeholder="Cifra"/>
+                <input class="full" required type="file" placeholder="Cifra"/>
               </label>
               <label> Visibilidade:
-                <input type="radio" class="full" name="visibilidade" value="Privado"> Privado
-                <input type="radio" class="full" name="visibilidade" value="Público"> Público
+                <input type="radio" required class="full" name="visibilidade" value="Privado"> Privado
+                <input type="radio" required class="full" name="visibilidade" value="Público"> Público
               </label>
               <input class="btn btn-sucesso text" type="submit" value="Entrar">
             </form>

@@ -23,16 +23,16 @@
           <form class="form-cadastro" action="#">
             <div id="input-cadastro">
               <label>
-                <input class="full" type="text" placeholder="Nome"/>
+                <input class="full" required pattern="[A-Za-z].{3,}" type="text" placeholder="Nome"/>
               </label>
               <label>
-                <input class="full" type="text" placeholder="Email"/>
+                <input class="full" required type="email" placeholder="Email"/>
               </label>
               <label>
-                <input class="full" type="password" placeholder="Senha"/>
+                <input class="full" required type="password" placeholder="Senha"/>
               </label>
               <label>
-                <input class="full" type="password" placeholder="Confirme sua Senha"/>
+                <input class="full" required type="password" placeholder="Confirme sua Senha"/>
               </label>
             </div>
             <div class="absoluto acima direita">

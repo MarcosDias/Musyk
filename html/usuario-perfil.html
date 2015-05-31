@@ -50,10 +50,12 @@
             </figure>
             <div id="input-perfil" class="input-cadastro absoluto acima direita">
               <label>
-                <input class="full" type="text" placeholder="Nome"/>
+                <input class="full" required pattern="[A-Za-z].{3,}" type="text"
+                  placeholder="Nome"/>
               </label>
               <label>
-                <input class="full" type="text" placeholder="Telefone"/>
+                <input class="full" pattern="\([0-9]{2}\) [0-9]{4,5}-[0-9]{4}$"
+                  type="text" placeholder="Telefone"/>
               </label>
               <label>
                 Trocar foto de perfil:
