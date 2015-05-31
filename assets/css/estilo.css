@@ -15,9 +15,13 @@ header {
   position: relative;
 }
 
+header nav {
+  width: 50%;
+}
+
 #form-login {
   position: absolute;
-  top: 30;
+  top: 2em;
 }
 
 #form-login label {
@@ -136,7 +140,7 @@ header {
   background-color: #ccc;
 }
 
-.time-line #search {
+.time-line .search {
   margin: .5em auto;
 }
 
