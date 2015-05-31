@@ -127,7 +127,7 @@ header {
 .time-line input[type=search] {
   position: relative;
   background-color: #ccc;
-  width: 33em;
+  /*width: 33em;*/
 }
 
 .time-line #search {
@@ -368,8 +368,8 @@ h3 {
 }
 
 .full {
-  width: 90%;
-  margin: .5em auto;
+  width: 100%;
+  margin: .5em 0;
 }
 
 .background {
@@ -416,9 +416,10 @@ a {
 label {
   display: block;
 }
+
 form input {
   border: 1px solid #f2f2f2;
-  padding: 8px;
+  padding: 8px 0;
   border-radius: 2px;
 }
 
