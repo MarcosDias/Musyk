@@ -1,7 +1,7 @@
-var numImagens = 9;
-var path = "../assets/img/banner/";
-var iter = 1;
-var ext = ".jpg";
+var numImagens = 9,
+  path = "../assets/img/banner/",
+  iter = 1,
+  ext = ".jpg";
 
 function banner () {
   var img = document.getElementById("fundo-img");
