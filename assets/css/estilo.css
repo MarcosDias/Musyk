@@ -173,6 +173,10 @@ header {
   margin: .3em 0;
 }
 
+#titulo-equipe {
+  margin-top: .5em;
+}
+
 .box-time-line {
   background: #ccc;
   padding: .5em;
