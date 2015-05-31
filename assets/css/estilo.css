@@ -122,12 +122,18 @@ header {
 }
 
 
-.time-line input[type=text],
-.time-line input[type=file],
-.time-line input[type=search] {
+#abrir-modal input[type=search],
+#abrir-modal input[type=text],
+#abrir-modal input[type=file] {
   position: relative;
   background-color: #ccc;
-  /*width: 33em;*/
+}
+
+.time-line input[type=search],
+.time-line input[type=text],
+.time-line input[type=file] {
+  position: relative;
+  background-color: #ccc;
 }
 
 .time-line #search {
@@ -230,6 +236,21 @@ header {
   margin-right: auto;
 }
 
+.box-grid-time-line {
+  width: 6.5em;
+  margin-right: .5em;
+  text-align: center;
+  display: inline-block;
+}
+
+.grid-time-line {
+  position: absolute;
+}
+
+.box-grid-time-line img {
+  margin: .5em 0;
+}
+
 pre {
   margin: .5em 0;
 }
@@ -278,7 +299,7 @@ footer {
   pointer-events: auto;
 }
 
-.modal div {
+.modal > div {
   border-radius: 1em;
   background: #fff;
   position: relative;
@@ -317,7 +338,7 @@ footer {
   float:left;
 }
 
-.tabs input{
+.tabs > input{
   opacity:0;
 }
 
