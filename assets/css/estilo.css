@@ -16,7 +16,12 @@ header {
 }
 
 header nav {
-  width: 50%;
+  width: 60%;
+}
+
+.icon-nav {
+  width: 3em;
+  height: 3em;
 }
 
 #form-login {
