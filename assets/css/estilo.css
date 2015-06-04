@@ -136,6 +136,7 @@ header nav {
 
 #abrir-modal input[type=search],
 #abrir-modal input[type=text],
+#abrir-modal input[type=tel],
 #abrir-modal input[type=file] {
   position: relative;
   background-color: #ccc;
@@ -143,6 +144,7 @@ header nav {
 
 .time-line input[type=search],
 .time-line input[type=text],
+.time-line input[type=tel],
 .time-line input[type=file] {
   position: relative;
   background-color: #ccc;
