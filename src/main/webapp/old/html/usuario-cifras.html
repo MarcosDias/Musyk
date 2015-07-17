@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="../assets/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/estilo.css">
+    <title>Musyk</title>
+  </head>
+  <body>
+    <!-- Topo -->
+    <header class="escurecer">
+      <div class="container">
+        <nav id="nav-site">
+          <ul>
+            <li>
+              <a href="#">
+                <img src="../assets/img/logo.png" alt="Musyk | merecemos mais música"/>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="../assets/img/perfil.png" class="icon-nav" alt="Perfil">
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="../assets/img/equipe.png" class="icon-nav" alt="Equipes">
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="../assets/img/cifra.png"class="icon-nav" alt="Cifras">
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <form id="form-logoff" class="absoluto acima direita text" action="#">
+          <a href="#">
+            Sair
+          </a>
+        </form>
+      </div>
+    </header>
+    <main class="background body-text">
+      <div class="container">
+        <section class="time-line">
+          <h1 class="titulo text">Cifras</h1>
+
+          <a class="abrir-modal absoluto acima direita" href="#abrir-modal">
+            <img src="http://placehold.it/42x42" alt="">
+          </a>
+
+          <form id="search" class="input-cadastro" action="#">
+            <input type="search" class="full" name="buscar" placeholder="Buscar Cifras" value="">
+          </form>
+
+          <ul>
+            <li class="box-time-line">
+              <a href="#">
+                <div class="simple-info-cifra">
+                  <p>Nome da Música:&nbsp;</p><p>NomeDaMusica</p>
+                </div>
+                <div class="simple-info-cifra">
+                  <p>Nome do Cantor/Banda:&nbsp;</p><p>NomeDoCantorBanda</p>
+                </div>
+                <div class="simple-info-cifra">
+                  <p>Tom:&nbsp;</p><p>C</p>
+                </div>
+                <div class="voto-cifra absoluto direita acima">
+                  <img src="http://placehold.it/32/5A0287" alt="">
+                  <img src="http://placehold.it/32/5A0287" alt="">
+                  <img src="http://placehold.it/32/5A0287" alt="">
+                  <img src="http://placehold.it/32/5A0287" alt="">
+                  <img src="http://placehold.it/32/5A0287" alt="">
+                </div>
+              </a>
+            </li>
+            <li class="box-time-line">
+              <a href="#">
+                <div class="simple-info-cifra">
+                  <p>Nome da Música:&nbsp;</p><p>NomeDaMusica</p>
+                </div>
+                <div class="simple-info-cifra">
+                  <p>Nome do Cantor/Banda:&nbsp;</p><p>NomeDoCantorBanda</p>
+                </div>
+                <div class="simple-info-cifra">
+                  <p>Tom:&nbsp;</p><p>C</p>
+                </div>
+                <div class="voto-cifra absoluto direita acima">
+                  <p>Cifra Privada</p>
+                </div>
+              </a>
+            </li >
+            <li class="box-time-line">
+              <a href="#">
+                <div class="simple-info-cifra">
+                  <p>Nome da Música:&nbsp;</p><p>NomeDaMusica</p>
+                </div>
+                <div class="simple-info-cifra">
+                  <p>Nome do Cantor/Banda:&nbsp;</p><p>NomeDoCantorBanda</p>
+                </div>
+                <div class="simple-info-cifra">
+                  <p>Tom:&nbsp;</p><p>C</p>
+                </div>
+                <div class="voto-cifra absoluto direita acima">
+                  <img src="http://placehold.it/32/5A0287" alt="">
+                  <img src="http://placehold.it/32/5A0287" alt="">
+                  <img src="http://placehold.it/32/5A0287" alt="">
+                  <img src="http://placehold.it/32/5A0287" alt="">
+                  <img src="http://placehold.it/32/5A0287" alt="">
+                </div>
+              </a>
+            </li>
+            <li class="box-time-line">
+              <a href="#">
+                <div class="simple-info-cifra">
+                  <p>Nome da Música:&nbsp;</p><p>NomeDaMusica</p>
+                </div>
+                <div class="simple-info-cifra">
+                  <p>Nome do Cantor/Banda:&nbsp;</p><p>NomeDoCantorBanda</p>
+                </div>
+                <div class="simple-info-cifra">
+                  <p>Tom:&nbsp;</p><p>C</p>
+                </div>
+                <div class="voto-cifra absoluto direita acima">
+                  <img src="http://placehold.it/32/5A0287" alt="">
+                  <img src="http://placehold.it/32/5A0287" alt="">
+                  <img src="http://placehold.it/32/5A0287" alt="">
+                  <img src="http://placehold.it/32/5A0287" alt="">
+                  <img src="http://placehold.it/32/5A0287" alt="">
+                </div>
+              </a>
+            </li>
+          </ul>
+        </section>
+
+        <section id="abrir-modal" class="modal">
+        	<div>
+        		<a class="close" title="Fechar" href="#close">X</a>
+        		<h2 class="text">Salvar nova cifra.</h2>
+
+            <form class="input-cadastro" action="#">
+              <label>
+                <input class="full" required type="text" placeholder="Nome da Cantor/Banda"/>
+              </label>
+              <label>
+                <input class="full" required type="text" placeholder="Nome da Música"/>
+              </label>
+              <label>
+                <select class="full" required>
+                  <option selected value="">Selecione uma opção.</option>
+                  <option value="C" >C</option>
+                  <option value="C#">C#</option>
+                  <option value="D" >D</option>
+                  <option value="D#">D#</option>
+                  <option value="E" >E</option>
+                  <option value="F" >F</option>
+                  <option value="F#">F#</option>
+                  <option value="G" >G</option>
+                  <option value="G#">G#</option>
+                  <option value="A" >A</option>
+                  <option value="Bb">Bb</option>
+                  <option value="B" >B</option>
+                </select>
+              </label>
+              <label>
+                <input class="full" required type="file"/>
+              </label>
+              <label> Visibilidade:</label>
+              <input type="radio" required class="full" name="visibilidade" value="Privado"> Privado
+              <input type="radio" required class="full" name="visibilidade" value="Público"> Público
+
+              <input class="btn btn-sucesso text" type="submit" value="Entrar">
+            </form>
+        	</div>
+        </section>
+
+        <section id="foto-perfil" class="foto absoluto acima direita">
+          <figure>
+            <img src="../assets/img/usuario.jpeg" alt="Foto de Perfil">
+          </figure>
+        </section>
+
+        <section id="prox-eventos" class="absoluto direita">
+          <h3 class="text">Proximos Eventos</h3>
+          <ul>
+            <li><a href="#">Evento 1</a></li>
+            <li><a href="#">Evento 2</a></li>
+            <li><a href="#">Evento 3</a></li>
+            <li><a href="#">Evento 4</a></li>
+            <li><a href="#">Evento 5</a></li>
+            <li><a href="#">Evento 6</a></li>
+            <li><a href="#">Evento 7</a></li>
+            <li><a href="#">Evento 8</a></li>
+            <li><a href="#">Mais eventos...</a></li>
+          </ul>
+        </section>
+      </div>
+    </main>
+
+    <!-- Rodapeh -->
+    <footer class="">
+      <div class="container">
+        <nav>
+          <ul class="social">
+            <li>
+              <a href="http://facebook.com/">
+                <img src="../assets/img/social/facebook.png" alt="Facebook">
+              </a>
+            </li>
+            <li>
+              <a href="http://twitter.com/">
+                <img src="../assets/img/social/twitter.png" alt="Facebook">
+              </a>
+            </li>
+            <li>
+              <a href="http://plus.google.com/">
+                <img src="../assets/img/social/googleplus.png" alt="Facebook">
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </footer>
+  </body>
+</html>
