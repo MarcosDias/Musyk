@@ -1,0 +1,58 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:pt="http://xmlns.jcp.org/jsf/passthrough"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+    <ui:composition>
+        <main class="background full-tela body-text">
+            <div class="container">
+                <section class="painel-metade">
+                    <h1 class="text">Participe hoje do Musyk.</h1>
+
+                    <h:form class="form-cadastro">
+                        <div id="input-cadastro">
+                            <h:messages/>
+                            <label>
+                                <h:inputText class="full" pt:required="true" pt:autofocus="true" 
+                                             pt:pattern="[A-Za-z].{3,}" pt:type="text" 
+                                             pt:placeholder="Nome" value="#{usuarioBean.perfil.nome}" />
+                            </label>
+                            <label>
+                                <h:inputText class="full" pt:required="true" pt:type="email" 
+                                             pt:placeholder="Email" value="#{usuarioBean.usuario.email}"/>
+                            </label>
+                            <label>
+                                <h:inputSecret class="full" pt:required="true" pt:type="password" 
+                                               pt:placeholder="Senha" value="#{usuarioBean.usuario.senha}"/>
+                            </label>
+                            <label>
+                                <h:inputSecret class="full" pt:required="true" pt:type="password" 
+                                               pt:placeholder="Confirme sua Senha" 
+                                               value="#{usuarioBean.confirmarSenha}"/>
+                            </label>
+                        </div>
+                        <div class="absoluto acima direita">
+                            <h:selectManyCheckbox value="#{usuarioBean.instrumentos}" layout="pageDirection">
+                                <f:selectItems pt:type="checkbox" value="#{usuarioBean.instrumentos}" 
+                                               var="inst" itemLabel="#{inst.nome}" 
+                                               itemValue="#{inst.nome}" />
+                            </h:selectManyCheckbox>
+                        </div>
+                        <p>Selecione outros instrumentos dentro do site.</p>
+                        <h:commandButton class="btn btn-sucesso text" pt:type="submit" 
+                                         action="#{usuarioBean.cadastrar}" value="#{msg['Cadastrar']}"/>
+                    </h:form>
+                </section>
+
+                <section id="painel-direita" class="painel-metade absoluto acima direita">
+                    <figure id="destaque-cadastro" class="foto">
+                        <h:graphicImage name="img/bateria.jpg" alt="Bateria" />
+                    </figure>
+                </section>
+            </div>
+        </main>
+    </ui:composition>
+</html>
+

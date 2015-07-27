@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:pt="http://xmlns.jcp.org/jsf/passthrough"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets">
+    <h:head>
+        <h:outputStylesheet library="css" name="reset.css" />
+        <h:outputStylesheet library="css" name="estilo.css" />
+        <h:outputScript library="js" name="banner.js" />
+
+        <title>#{msg['Musyk']}</title>
+    </h:head>
+    <h:body>
+        <!-- Topo -->
+        <header class="transparencia">
+            <div class="container">
+                <nav>
+                    <figure>
+                        <h:link value="#{loginBean.redirect.index}">
+                                <h:graphicImage name="img/logo.png" alt="#{msg['logo.alt']}"/>
+                            </h:link>
+                        </figure>
+                </nav>
+                <div id="form-login" class="direita">
+                    <h:form>
+                        <h:messages/>
+                        <label>
+                            <h:inputText pt:type="email" pt:required="true" pt:placeholder="#{msg['email']}" value="#{loginBean.usuario.email}" />
+                        </label>
+                        <label>
+                            <h:inputSecret pt:required="true" pt:placeholder="#{msg['senha']}" value="#{loginBean.usuario.senha}" />
+                        </label>
+                        <h:commandButton class="btn btn-principal text" action="#{loginBean.entrar}" value="#{msg['Entrar']}"/>
+                    </h:form>
+                </div>
+            </div>
+        </header>
+
+        <!-- Principal -->
+        <main class="container">
+            <div>
+                <h:graphicImage id="fundo-img" name="img/banner/0.jpg" class="fundo-img"/>
+            </div>
+            <div class="cadastreSe">
+                <div class="cadastreSe-p body-text">
+                    <p>#{msg['bemVindo']}</p>
+                    <p>#{msg['fraseConvidativa1']}</p>
+                    <p>#{msg['fraseConvidativa2']}</p>
+                </div>
+                <h:link class="btn btn-cadastreSe" outcome="#{loginBean.redirect.cadastro}" value="#{msg['cadastreSe']}"/>
+            </div>
+        </main>
+
+        <!-- Rodapeh -->
+        <footer class="baixo transparencia">
+            <ui:define name="footer">
+                <footer>
+                    <ui:include src="/componentes/footer.xhtml"/>
+                </footer>
+            </ui:define>
+        </footer>
+    </h:body>
+</html>
+

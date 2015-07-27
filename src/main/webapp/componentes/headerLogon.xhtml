@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets">
+    <ui:composition>
+        <header class="escurecer">
+            <div class="container">
+                <nav id="nav-site">
+                    <ul>
+                        <li>
+                            <h:link outcome="#{bean.redirect.principal}">
+                                <h:graphicImage name="img/logo.png" alt="#{msg['logo.alt']}"/>
+                            </h:link>
+                        </li>
+                        <li>
+                            <h:link outcome="#{bean.redirect.perfil}">
+                                <h:graphicImage name="img/perfil.png" class="icon-nav" alt="#{msg['perfil.alt']}"/>
+                            </h:link>
+                        </li>
+                        <li>
+                            <h:link outcome="index">
+                                <h:graphicImage name="img/equipe.png" class="icon-nav" alt="#{msg['equipe.alt']}"/>
+                            </h:link>
+                        </li>
+                        <li>
+                            <h:link outcome="index">
+                                <h:graphicImage name="img/cifra.png" class="icon-nav" alt="#{msg['cifras.alt']}"/>
+                            </h:link>
+                        </li>
+                    </ul>
+                </nav>
+                <h:form id="form-logoff" class="absoluto acima direita text">
+                    <h:commandLink action="#{bean.logoff}" value="#{msg['Sair']}" />
+                </h:form>
+            </div>
+        </header>
+    </ui:composition>
+</html>
+

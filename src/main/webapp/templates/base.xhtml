@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="pt-br" xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets">
+    <h:head>
+        <meta charset="UTF-8"/>
+        <h:outputStylesheet library="css" name="reset.css" />
+        <h:outputStylesheet library="css" name="estilo.css" />
+        <h:outputScript library="js" name="banner.js" />
+        
+        <title>
+            <ui:insert name="titulo">Musyk</ui:insert>
+        </title>
+    </h:head>
+    <h:body>
+        <ui:insert name="header"></ui:insert>
+        
+        <ui:insert name="body"></ui:insert>
+        
+        <ui:insert name="footer"></ui:insert>
+    </h:body>
+</html>
+

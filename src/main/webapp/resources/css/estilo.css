@@ -1,0 +1,538 @@
+@import url('http://fonts.googleapis.com/css?family=Oswald');
+@import url('http://fonts.googleapis.com/css?family=Dosis:400,500,600');
+
+.container {
+  position: relative;
+  margin: 0 auto;
+  padding: 1em 0;
+  width: 80%;
+}
+
+/* ---- HEADER ---- */
+header {
+  background: #5A0287;
+  border-bottom: 0.1em solid #fff;
+  position: relative;
+}
+
+header nav {
+  width: 60%;
+}
+
+.icon-nav {
+  width: 3em;
+  height: 3em;
+}
+
+#form-login {
+  position: absolute;
+  top: 2em;
+}
+
+#form-login label {
+  display: inline;
+}
+
+#nav-site ul li{
+  display: inline;
+  margin-right: 0.2em;
+}
+
+#form-logoff {
+  margin: 2em 0;
+}
+
+#form-logoff a {
+  color: #fff;
+}
+/* ---- FIM HEADER ---- */
+
+/* ---- CORPO ---- */
+.fundo-img {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  /*min-width: 100%;
+  min-height: 100%;*/
+  width: 100%;
+  height: 100%;
+  z-index: -100;
+  transform: translateX(-50%) translateY(-50%);
+  background: #000 no-repeat center center;
+  background-size: cover;
+
+}
+
+.cadastreSe{
+  border: 0.2em solid #9300de;
+  border-radius: 1.5em;
+  height: 15em;
+  margin: 2em auto;
+  margin-top: 5%;
+  position: relative;
+  width: 35em;
+}
+
+.cadastreSe-p {
+  font-size: 1.5em;
+  font-weight: bold;
+  line-height: 1.5;
+  margin-top: 1em;
+  text-align: center;
+  text-shadow: 0.1em 0.1em #000;
+}
+
+.cadastreSe-p p {
+  color: #fff;
+}
+
+.painel-metade {
+  position: relative;
+  width: 45%;
+}
+
+#painel-direita {
+  margin: 1em 0;
+}
+
+.form-cadastro {
+  position: relative;
+  width: 100%;
+  display: inline-block;
+}
+
+#input-cadastro {
+  margin-bottom: .5em;
+  width: 22em;
+}
+
+.foto {
+  border: solid .5em #fff;
+  border-bottom: solid 1.2em #fff;
+}
+
+.foto img {
+  height: 100%;
+  width: 100%;
+}
+
+#destaque-cadastro {
+  width: 25em;
+  height: 24em;
+}
+
+.time-line {
+  background: #fff;
+  min-height: 35em;
+  padding: .5em;
+  position: relative;
+  width: 60%;
+}
+
+.time-line .titulo {
+  text-align: center;
+}
+
+
+#abrir-modal input[type=search],
+#abrir-modal input[type=text],
+#abrir-modal input[type=tel],
+#abrir-modal input[type=file] {
+  position: relative;
+  background-color: #ccc;
+}
+
+.time-line input[type=search],
+.time-line input[type=text],
+.time-line input[type=tel],
+.time-line input[type=file] {
+  position: relative;
+  background-color: #ccc;
+}
+
+.time-line .search {
+  margin: .5em auto;
+}
+
+#input-perfil {
+  margin-bottom: .5em;
+  width: 26em;
+}
+
+#img-perfil-cadastro {
+  border-color: #D7D0DB;
+  height: 12em;
+  margin-bottom: 1em;
+  width: 12em;
+}
+
+#foto-perfil {
+  height: 20em;
+  margin-top: 1em;
+  width: 20em;
+}
+
+#foto-perfil figure {
+  width: 100%;
+  height: 100%;
+}
+
+#prox-eventos {
+  width: 21em;
+  position: absolute;
+  bottom: 1.5em;
+}
+
+#prox-eventos ul li {
+  margin: .3em 0;
+}
+
+#titulo-equipe {
+  margin-top: .5em;
+}
+
+.box-time-line {
+  background: #ccc;
+  padding: .5em;
+  position: relative;
+  margin-bottom: .5em;
+}
+
+.box-time-line .img-simple-info-equipe {
+  width: 5em;
+  height: 5em;
+}
+.box-time-line .simples-info-equipe {
+  left: 6em;
+  top: 10;
+}
+
+.box-time-line .simples-info-equipe p {
+  margin: 1em 0;
+}
+
+.box-time-line .simple-info-cifra p {
+  display: inline-block;
+}
+
+.voto-cifra {
+  margin: .5em;
+}
+
+.voto-cifra p {
+  color: red;
+}
+
+.galeria-time-line {
+  margin-top: .3em;
+}
+
+.galeria-time-line li{
+  display: inline-block;
+}
+
+.anterior-proximo {
+  margin: 1.5em 0;
+  left: 40%;
+}
+
+.abrir-modal {
+  margin: .5em;
+}
+
+#abrir-modal h2 {
+  text-align: center;
+}
+
+#abrir-modal input[type=text],
+#abrir-modal input[type=file] {
+  background-color: #ccc;
+}
+
+#abrir-modal input[type=submit] {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.box-grid-time-line {
+  width: 6.5em;
+  margin-right: .5em;
+  text-align: center;
+  display: inline-block;
+}
+
+.grid-time-line {
+  position: absolute;
+}
+
+.box-grid-time-line img {
+  margin: .5em 0;
+}
+
+pre {
+  margin: .5em 0;
+}
+/* ---- FIM CORPO ---- */
+
+/* ---- FOOTER ----*/
+footer {
+  background: #5A0287;
+  border-top: 0.1em solid #FFF;
+  clear: both;
+  height: 4em;
+  position: absolute;
+  width: 100%;
+}
+
+.social li {
+  display: inline;
+}
+
+.social {
+  position: absolute;
+  top: 1em;
+  right: 0;
+}
+/* ---- FIM FOOTER ----*/
+
+/* ---- MODAL ----*/
+.modal {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0,0,0,0.5);
+  z-index: 99999;
+  opacity:0;
+  -webkit-transition: opacity 400ms ease-in;
+  -moz-transition: opacity 400ms ease-in;
+  transition: opacity 400ms ease-in;
+  pointer-events: none;
+  overflow: scroll;
+}
+
+.modal:target {
+  opacity:1;
+  pointer-events: auto;
+}
+
+.modal > div {
+  border-radius: 1em;
+  background: #fff;
+  position: relative;
+  width: 30em;
+  margin: 5% auto;
+  padding: .8em;
+}
+
+.close {
+  background: #606061;
+  color: #FFFFFF;
+  line-height: 1.5em;
+  position: absolute;
+  right: -.5em;
+  text-align: center;
+  top: -.5em;
+  width: 1.5em;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 12px;
+}
+
+.close:hover {
+  background: #5A0287;
+}
+/* ---- FIM MODAL ----*/
+
+/*---- ABAS ----*/
+.tab-main{
+  top: -2em;
+  min-height: 40em;
+  position: relative;
+}
+
+.tabs{
+  float:left;
+}
+
+.tabs > input{
+  opacity:0;
+}
+
+.tabs label {
+  padding: .5em 1em;
+  cursor: pointer;
+}
+
+.tab-content{
+  display:none;
+  position: absolute;
+  top: 3em;
+  left: 0;
+  margin-top: .7em;
+}
+
+[id^=tab]:checked + label {
+  background: #5A0287;
+  color: #fff;
+}
+
+[id^=tab]:checked ~ .tab-content {
+  display: block;
+}
+/*---- FIM ABAS ----*/
+
+/* ---- H's ----*/
+h1 {
+  font-size: 2em;
+  margin-bottom: .25em;
+}
+
+h2 {
+  font-size: 1.2em;
+  margin-bottom: .25em;
+}
+
+h3 {
+  font-size: 1.0em;
+  margin-bottom: .3em;
+}
+/* ---- FIM H's ----*/
+
+/*---- EFEITOS ---- */
+.colunas {
+  -moz-column-count: 3;
+  -webkit-column-count: 3;
+}
+
+.full {
+  width: 100%;
+  margin: .5em 0;
+}
+
+.background {
+  background: #D7D0DB;
+
+}
+
+.full-tela {
+  height: 30em;
+}
+
+.absoluto {
+  position: absolute;
+}
+
+.direita {
+  right: 0;
+}
+
+.acima {
+  top: 0;
+}
+
+.baixo {
+  bottom: 0;
+}
+
+.transparencia {
+  background: rgba(147,0,222,0.6);
+}
+
+.clarear {
+  background: #9300de;
+}
+/*---- FIM EFEITOS ---- */
+
+/* ---- A's ----*/
+a {
+  color: #5A0287;
+}
+/* ---- FIM A's ----*/
+
+/* ---- INPUTS ---- */
+label {
+  display: block;
+}
+
+form input,
+form select {
+  border: 1px solid #f2f2f2;
+  padding: 8px 0;
+  border-radius: 2px;
+}
+
+form input:focus {
+  background-color: #ccc;
+}
+
+input[type=radio] {
+  width: 10%;
+  margin: .5em 0;
+}
+/* ---- FIM INPUTS ---- */
+
+/* ---- TEXT ----*/
+.text {
+  font-family: 	"Oswald", Helvetica, Arial, sans-serif;
+}
+
+.body-text {
+  font-family: 	"Dosis", Helvetica, Arial, sans-serif;
+}
+
+/* ---- FIM TEXT ----*/
+
+/*---- BOTOES ----*/
+.btn {
+  background-color: #ccc;
+  border: none;
+  border-radius: .1em;
+  color: #fff;
+  font-size: .85em;
+  padding: .4em 1.0em;
+  text-decoration: none;
+  text-align: center;
+}
+
+.btn-cadastreSe {
+  color: #fff;
+  background-color: #9300DE;
+  bottom: 1em;
+  font-size: 1.2em;
+  left: calc(50% - 5em);
+  padding: 0.75em 2em;
+  position: absolute;
+  width: 5em;
+}
+
+.btn-cadastreSe:hover {
+  background-color: #af12ff;
+}
+
+.btn-principal {
+  background-color: #0095b4;
+}
+
+.btn-principal:hover {
+  background-color: #00809c;
+}
+
+#btn-perfil-cadastro {
+  margin: 1.5em 15em;
+  width: 15em;
+}
+
+.btn-sucesso {
+  background-color: #009835;
+}
+
+.btn-erro {
+  background-color: #CC0000;
+}
+
+.btn-alerta {
+  background-color: #F28E00;
+}
+/*---- FIM BOTOES ----*/
