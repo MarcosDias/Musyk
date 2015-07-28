@@ -7,7 +7,7 @@
     <application>
         <resource-bundle>
             <base-name>
-                resources.messages  
+                messages  
             </base-name>
             <var>msg</var>
         </resource-bundle>
