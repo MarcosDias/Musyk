@@ -5,8 +5,13 @@
  */
 package br.edu.ifes.sr.devweb.musyk.web.model.cdp;
 
+import br.edu.ifes.sr.devweb.musyk.web.model.util.persistencia.ObjetoPersistente;
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.validation.constraints.NotNull;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
+import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 /**
@@ -15,7 +20,11 @@ import lombok.Setter;
  */
 @Getter
 @Setter
+@NoArgsConstructor
 @AllArgsConstructor
-public class Instrumento {
+@Entity
+public class Instrumento extends ObjetoPersistente{
+    @Column
+    @NotNull
     private String nome;
 }

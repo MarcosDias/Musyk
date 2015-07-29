@@ -5,6 +5,11 @@
  */
 package br.edu.ifes.sr.devweb.musyk.web.model.cdp;
 
+import br.edu.ifes.sr.devweb.musyk.web.model.util.persistencia.ObjetoPersistente;
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.OneToOne;
+import javax.validation.constraints.NotNull;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -14,13 +19,34 @@ import lombok.Setter;
  */
 @Getter
 @Setter
-public class Cifra {
+@Entity
+public class Cifra extends ObjetoPersistente{
+    @Column
+    @NotNull
     private String musica;
+    
+    @Column
+    @NotNull
     private String banda;
+    
+    @Column
+    @NotNull
     private String tom;
+    
+    @Column
     private String file;
+    
+    @Column
+    @NotNull
     private boolean publica;
+    
+    @Column
     private int nota;
+    
+    @NotNull
+    @OneToOne
     private Perfil dono;
+    
+    @OneToOne
     private Equipe equipe;
 }

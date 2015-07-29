@@ -1,6 +1,12 @@
 package br.edu.ifes.sr.devweb.musyk.web.model.cdp;
 
+import br.edu.ifes.sr.devweb.musyk.web.model.util.persistencia.ObjetoPersistente;
 import java.util.List;
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.OneToMany;
+import javax.persistence.OneToOne;
+import javax.validation.constraints.NotNull;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -10,11 +16,26 @@ import lombok.Setter;
  */
 @Getter
 @Setter
-public class Equipe {
+@Entity
+public class Equipe extends ObjetoPersistente{
+    
+    @Column
+    @NotNull
     private String nome;
-    private List<String> fotos;
+    
+    /*@Column
+    @NotNull
+    private List<String> fotos;*/
+    
+    @Column
     private String fotoPerfil;
+    
+    @OneToMany
     private List<Apresentacao> apresentacoes;
+    
+    @OneToMany
     private List<Cifra> cifras;
+    
+    @OneToOne
     private List<Perfil> usuarios;
 }

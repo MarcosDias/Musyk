@@ -5,7 +5,14 @@
  */
 package br.edu.ifes.sr.devweb.musyk.web.model.cdp;
 
+import br.edu.ifes.sr.devweb.musyk.web.model.util.persistencia.ObjetoPersistente;
 import java.util.Calendar;
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Temporal;
+import javax.persistence.TemporalType;
+import javax.validation.constraints.Future;
+import javax.validation.constraints.NotNull;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -15,7 +22,15 @@ import lombok.Setter;
  */
 @Getter
 @Setter
-public class Apresentacao {
-    private Calendar data;
-    private String local;
+@Entity
+public class Apresentacao extends ObjetoPersistente{
+    @Column
+    @Temporal(TemporalType.TIMESTAMP)
+    @Future
+    @NotNull
+    private Calendar dataApresentacao;
+    
+    @Column
+    @NotNull
+    private String localApresentacao;
 }

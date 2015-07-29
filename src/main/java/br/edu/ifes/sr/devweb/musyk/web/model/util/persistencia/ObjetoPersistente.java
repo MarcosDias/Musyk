@@ -5,10 +5,12 @@
  */
 package br.edu.ifes.sr.devweb.musyk.web.model.util.persistencia;
 
+import java.io.Serializable;
 import javax.persistence.Column;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.MappedSuperclass;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -18,7 +20,8 @@ import lombok.Setter;
  */
 @Getter
 @Setter
-public class ObjetoPersistente {
+@MappedSuperclass
+public class ObjetoPersistente implements Serializable{
     @Id
     @Column
     @GeneratedValue(strategy = GenerationType.IDENTITY)
