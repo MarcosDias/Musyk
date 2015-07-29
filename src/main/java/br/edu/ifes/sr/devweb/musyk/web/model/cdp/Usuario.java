@@ -17,7 +17,7 @@ import lombok.Setter;
 @Setter
 @Entity
 public class Usuario extends ObjetoPersistente{
-    @Column
+    @Column(unique = true)
     @NotNull
     private String email;
     
@@ -26,6 +26,7 @@ public class Usuario extends ObjetoPersistente{
     private String senha;
     
     @OneToOne(cascade = CascadeType.ALL)
+    @Column(unique = true)
     @NotNull
     private Perfil perfil;
 }
