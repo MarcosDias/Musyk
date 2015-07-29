@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package br.edu.ifes.sr.devweb.musyk.web.model;
+package br.edu.ifes.sr.devweb.musyk.web.model.cdp;
 
 import lombok.Getter;
 import lombok.Setter;

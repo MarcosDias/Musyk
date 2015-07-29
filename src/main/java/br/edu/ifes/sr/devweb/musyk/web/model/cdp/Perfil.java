@@ -1,4 +1,4 @@
-package br.edu.ifes.sr.devweb.musyk.web.model;
+package br.edu.ifes.sr.devweb.musyk.web.model.cdp;
 
 import java.util.List;
 import lombok.Getter;

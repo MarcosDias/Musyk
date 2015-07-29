@@ -3,9 +3,9 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package br.edu.ifes.sr.devweb.musyk.web.model;
+package br.edu.ifes.sr.devweb.musyk.web.model.cdp;
 
-import lombok.AllArgsConstructor;
+import java.util.Calendar;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -15,7 +15,7 @@ import lombok.Setter;
  */
 @Getter
 @Setter
-@AllArgsConstructor
-public class Instrumento {
-    private String nome;
+public class Apresentacao {
+    private Calendar data;
+    private String local;
 }

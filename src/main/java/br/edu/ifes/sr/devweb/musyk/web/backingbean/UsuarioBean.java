@@ -5,9 +5,9 @@
  */
 package br.edu.ifes.sr.devweb.musyk.web.backingbean;
 
-import br.edu.ifes.sr.devweb.musyk.web.model.Instrumento;
-import br.edu.ifes.sr.devweb.musyk.web.model.Perfil;
-import br.edu.ifes.sr.devweb.musyk.web.model.Usuario;
+import br.edu.ifes.sr.devweb.musyk.web.model.cdp.Instrumento;
+import br.edu.ifes.sr.devweb.musyk.web.model.cdp.Perfil;
+import br.edu.ifes.sr.devweb.musyk.web.model.cdp.Usuario;
 import java.util.ArrayList;
 import java.util.List;
 import javax.annotation.PostConstruct;

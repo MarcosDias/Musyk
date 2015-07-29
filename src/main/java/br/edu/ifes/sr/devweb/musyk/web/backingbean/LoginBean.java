@@ -5,7 +5,7 @@
  */
 package br.edu.ifes.sr.devweb.musyk.web.backingbean;
 
-import br.edu.ifes.sr.devweb.musyk.web.model.Usuario;
+import br.edu.ifes.sr.devweb.musyk.web.model.cdp.Usuario;
 import javax.faces.bean.ManagedBean;
 import javax.faces.bean.SessionScoped;
 import lombok.Getter;
