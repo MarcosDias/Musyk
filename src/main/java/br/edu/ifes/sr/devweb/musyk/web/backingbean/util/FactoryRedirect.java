@@ -17,5 +17,5 @@ public class FactoryRedirect {
     private final String cadastro = "cadastro";
     private final String principal = "principal";
     private final String logoff = index;
-    private final String perfil = "perfil/index";
+    private final String perfil = "perfil";
 }
