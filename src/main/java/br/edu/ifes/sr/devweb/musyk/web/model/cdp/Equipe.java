@@ -36,6 +36,6 @@ public class Equipe extends ObjetoPersistente{
     @OneToMany
     private List<Cifra> cifras;
     
-    @OneToOne
+    @OneToMany
     private List<Perfil> usuarios;
 }

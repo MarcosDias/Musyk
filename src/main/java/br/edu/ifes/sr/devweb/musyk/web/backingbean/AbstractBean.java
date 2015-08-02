@@ -5,7 +5,7 @@
  */
 package br.edu.ifes.sr.devweb.musyk.web.backingbean;
 
-import br.edu.ifes.sr.devweb.musyk.web.util.FactoryRedirect;
+import br.edu.ifes.sr.devweb.musyk.web.backingbean.util.FactoryRedirect;
 import javax.annotation.PostConstruct;
 import lombok.Getter;
 import lombok.Setter;

@@ -23,7 +23,7 @@ import lombok.Setter;
 @MappedSuperclass
 public class ObjetoPersistente implements Serializable{
     @Id
-    @Column
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "id")
     private Long id;
 }

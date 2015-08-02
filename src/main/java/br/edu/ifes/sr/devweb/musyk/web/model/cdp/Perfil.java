@@ -2,7 +2,10 @@ package br.edu.ifes.sr.devweb.musyk.web.model.cdp;
 
 import br.edu.ifes.sr.devweb.musyk.web.model.util.persistencia.ObjetoPersistente;
 import java.util.List;
+import javax.persistence.CascadeType;
 import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.FetchType;
 import javax.persistence.ManyToMany;
 import javax.persistence.OneToMany;
 import javax.persistence.OneToOne;
@@ -16,6 +19,7 @@ import lombok.Setter;
  */
 @Getter
 @Setter
+@Entity
 public class Perfil extends ObjetoPersistente{
     @Column
     @NotNull
@@ -29,7 +33,7 @@ public class Perfil extends ObjetoPersistente{
     @NotNull
     private String fotoPerfil;
     
-    @OneToOne
+    @OneToOne(mappedBy = "perfil")
     @NotNull
     private Usuario usuario;
     

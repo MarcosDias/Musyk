@@ -5,10 +5,15 @@
  */
 package br.edu.ifes.sr.devweb.musyk.web.persistencia;
 
+import br.edu.ifes.sr.devweb.musyk.web.model.util.persistencia.ObjetoPersistente;
+import lombok.Setter;
+import org.hibernate.Session;
+
 /**
  *
  * @author marcosdias
  */
-public class Dao {
-    
+@Setter
+public abstract class Dao{
+    protected Session session;
 }

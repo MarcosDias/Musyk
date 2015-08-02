@@ -4,6 +4,7 @@ import br.edu.ifes.sr.devweb.musyk.web.model.util.persistencia.ObjetoPersistente
 import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.JoinColumn;
 import javax.persistence.OneToOne;
 import javax.validation.constraints.NotNull;
 import lombok.Getter;
@@ -26,7 +27,7 @@ public class Usuario extends ObjetoPersistente{
     private String senha;
     
     @OneToOne(cascade = CascadeType.ALL)
-    @Column(unique = true)
+    @JoinColumn(name="perfil_id", unique=true)
     @NotNull
     private Perfil perfil;
 }
