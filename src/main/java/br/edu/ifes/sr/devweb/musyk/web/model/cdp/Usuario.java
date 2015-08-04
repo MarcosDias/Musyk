@@ -8,6 +8,7 @@ import javax.persistence.JoinColumn;
 import javax.persistence.OneToOne;
 import javax.validation.constraints.NotNull;
 import lombok.Getter;
+import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 /**
@@ -17,6 +18,7 @@ import lombok.Setter;
 @Getter
 @Setter
 @Entity
+@NoArgsConstructor
 public class Usuario extends ObjetoPersistente{
     @Column(unique = true)
     @NotNull
@@ -29,5 +31,5 @@ public class Usuario extends ObjetoPersistente{
     @OneToOne(cascade = CascadeType.ALL)
     @JoinColumn(name="perfil_id", unique=true)
     @NotNull
-    private Perfil perfil;
+    private Perfil perfil = new Perfil();
 }

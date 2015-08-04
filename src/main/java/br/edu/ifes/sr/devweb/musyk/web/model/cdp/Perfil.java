@@ -6,11 +6,14 @@ import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.FetchType;
+import javax.persistence.JoinColumn;
+import javax.persistence.JoinTable;
 import javax.persistence.ManyToMany;
 import javax.persistence.OneToMany;
 import javax.persistence.OneToOne;
 import javax.validation.constraints.NotNull;
 import lombok.Getter;
+import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 /**
@@ -19,6 +22,7 @@ import lombok.Setter;
  */
 @Getter
 @Setter
+@NoArgsConstructor
 @Entity
 public class Perfil extends ObjetoPersistente{
     @Column
@@ -26,11 +30,9 @@ public class Perfil extends ObjetoPersistente{
     private String nome;
     
     @Column
-    @NotNull
     private String telefone;
     
     @Column
-    @NotNull
     private String fotoPerfil;
     
     @OneToOne(mappedBy = "perfil")

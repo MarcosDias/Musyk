@@ -17,32 +17,32 @@
                             <label>
                                 <h:inputText class="full" pt:required="true" pt:autofocus="true" 
                                              pt:pattern="[A-Za-z].{3,}" pt:type="text" 
-                                             pt:placeholder="Nome" value="#{usuarioBean.perfil.nome}" />
+                                             pt:placeholder="Nome" value="#{cadastroBean.usuario.perfil.nome}" />
                             </label>
                             <label>
                                 <h:inputText class="full" pt:required="true" pt:type="email" 
-                                             pt:placeholder="Email" value="#{usuarioBean.usuario.email}"/>
+                                             pt:placeholder="Email" value="#{cadastroBean.usuario.email}"/>
                             </label>
                             <label>
                                 <h:inputSecret class="full" pt:required="true" pt:type="password" 
-                                               pt:placeholder="Senha" value="#{usuarioBean.usuario.senha}"/>
+                                               pt:placeholder="Senha" value="#{cadastroBean.usuario.senha}"/>
                             </label>
                             <label>
                                 <h:inputSecret class="full" pt:required="true" pt:type="password" 
                                                pt:placeholder="Confirme sua Senha" 
-                                               value="#{usuarioBean.confirmarSenha}"/>
+                                               value="#{cadastroBean.confirmarSenha}"/>
                             </label>
                         </div>
                         <div class="absoluto acima direita">
-                            <h:selectManyCheckbox value="#{usuarioBean.instrumentos}" layout="pageDirection">
-                                <f:selectItems pt:type="checkbox" value="#{usuarioBean.instrumentos}" 
+                            <h:selectManyCheckbox value="#{cadastroBean.usuario.perfil.instrumentos}" layout="pageDirection">
+                                <f:selectItems pt:type="checkbox" value="#{cadastroBean.instrumentos}" 
                                                var="inst" itemLabel="#{inst.nome}" 
-                                               itemValue="#{inst.nome}" />
+                                               itemValue="#{inst.id}" />
                             </h:selectManyCheckbox>
                         </div>
                         <p>Selecione outros instrumentos dentro do site.</p>
                         <h:commandButton class="btn btn-sucesso text" pt:type="submit" 
-                                         action="#{usuarioBean.cadastrar}" value="#{msg['Cadastrar']}"/>
+                                         action="#{cadastroBean.cadastrar}" value="#{msg['Cadastrar']}"/>
                     </h:form>
                 </section>
 

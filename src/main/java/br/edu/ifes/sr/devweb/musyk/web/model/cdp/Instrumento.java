@@ -24,7 +24,7 @@ import lombok.Setter;
 @AllArgsConstructor
 @Entity
 public class Instrumento extends ObjetoPersistente{
-    @Column
+    @Column(unique = true)
     @NotNull
     private String nome;
 }
